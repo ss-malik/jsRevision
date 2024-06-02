@@ -13,12 +13,25 @@ function calc(a, b, callbackFunction) {
 let result = calc(5, 4, sum);
 result = calc(5, 4, diff);
 
-console.log("order placed");
+// console.log("order placed");
 
 function makeCoffee() {
   setTimeout(function () {
-    console.log("Coffee is ready sir!");
+    return "Coffee is ready sir!";
   }, 2000);
 }
 makeCoffee();
-console.log("order served");
+// console.log("order served");
+function placeOrder() {
+  setTimeout(function () {
+    console.log("order1 is ready");
+    setTimeout(function () {
+      console.log("order2 is ready");
+      setTimeout(function () {
+        console.log("order3 is ready");
+      }, 2000);
+    }, 2000);
+  }, 2000);
+}
+
+let order = placeOrder();
