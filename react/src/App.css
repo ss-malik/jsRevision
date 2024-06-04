@@ -1,42 +1,85 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.header {
+  background-color: #010101;
+  color: #fff;
   text-align: center;
+  padding: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  background-color: #838383;
+  margin: 0 auto;
+  padding: 30px;
+  width: 70%;
+  min-height: calc(100vh - 60px);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.inputEle {
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-  padding: 2em;
+.inputEle input,
+.inputEle button {
+  padding: 15px;
+  margin: 15px auto;
+  border: none;
+  width: 70%;
+  border-radius: 15px;
 }
 
-.read-the-docs {
-  color: #888;
+.inputEle button {
+  background-color: black;
+  color: #fff;
+  width: 60%;
+}
+
+.task-box {
+  display: flex;
+  background-color: #fff;
+  width: 70%;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 15px;
+}
+.task-box .task {
+  width: 100%;
+}
+.task-box > p {
+  color: #01010195;
+}
+
+.btn {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background-color: #010101;
+  color: #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
