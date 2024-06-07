@@ -1,0 +1,32 @@
+$bg-dark: #000;
+$bg-light: #fff;
+
+.home {
+  background-color: $bg-dark;
+  color: $bg-light;
+  padding: 0 20px;
+
+  .banner {
+    height: 400px;
+  }
+  .row {
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin: 10px;
+    }
+    .cards {
+      display: flex;
+      overflow-x: auto;
+
+      .card {
+        width: 180px;
+        margin: 10px;
+        transition: transform 0.4s;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

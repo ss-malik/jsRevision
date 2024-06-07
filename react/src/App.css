@@ -20,7 +20,7 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .container {
@@ -82,4 +82,15 @@ body {
   border-radius: 50%;
   height: 50px;
   width: 50px;
+}
+.header a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: #fff;
+}
+
+.about,
+.contact {
+  min-height: 100vh;
+  background-color: #838383;
 }

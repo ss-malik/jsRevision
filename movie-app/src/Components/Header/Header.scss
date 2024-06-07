@@ -1,0 +1,29 @@
+$bg-dark: #000;
+$bg-light: #fff;
+
+.header {
+  background-color: $bg-dark;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+
+  .logo {
+    width: 70px;
+    cursor: pointer;
+  }
+
+  > div {
+    padding: 0 40px;
+    width: 100%;
+    > a {
+      color: $bg-light;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  }
+  > svg {
+    color: $bg-light;
+    cursor: pointer;
+  }
+}
