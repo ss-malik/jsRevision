@@ -6,12 +6,10 @@ const Data = () => {
   const [ndata, setNData] = useState(jsonData);
 
   const removeHandler = (identifier) => {
-    console.log(identifier);
-    setNData(
-      ndata.filter((ele) => {
-        ele.id !== identifier;
-      })
-    );
+    const filteredArray = ndata.filter((ele) => {
+      return ele.id != identifier;
+    });
+    setNData(filteredArray);
   };
 
   const removeUl = () => {

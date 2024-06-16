@@ -8,6 +8,8 @@ let string = "my name is Salman Malik";
 //   console.log(char);
 // }
 
+console.log(string.includes("my"));
+
 // count no of char in given string
 let count = 0;
 for (let char of string) {
