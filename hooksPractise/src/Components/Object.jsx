@@ -84,11 +84,11 @@ const Shoes = () => {
 
 const Cart = () => {
   const [inCart, setInCart] = useState([]);
-  const addToCart = (identifier) => {
-    const cartArray = allBrand.filter((ele) => ele.id === identifier);
 
-    setInCart([...inCart, { cartArray }]);
-    console.log(cartArray);
+  const addToCart = (identifier) => {
+    const cartArray = allBrand.find((ele) => ele.id === identifier);
+
+    setInCart([...inCart, cartArray]);
   };
   return (
     <>
@@ -100,9 +100,7 @@ const Cart = () => {
       ))}
       <div>
         <p>in Cart</p>
-        {inCart.map((ele) => (
-          <div>{ele.brandName} </div>
-        ))}
+        {inCart && inCart.map((ele) => <div>{ele.brandName} </div>)}
       </div>
     </>
   );
