@@ -85,6 +85,8 @@ const Shoes = () => {
 const Cart = () => {
   const [inCart, setInCart] = useState([]);
 
+  // const addToCart = (identifier) => {
+  //   const cartArray = allBrand.filter((ele) => ele.id === identifier);
   const addToCart = (identifier) => {
     const cartArray = allBrand.find((ele) => ele.id === identifier);
 
